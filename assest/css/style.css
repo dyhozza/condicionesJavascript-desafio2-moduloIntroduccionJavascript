@@ -1,0 +1,102 @@
+*{
+    padding: 50;
+    margin: 50;
+}
+ /* INDEX PRINCIPAL*/
+.padre{
+    display: flex;
+    justify-content: space-between;
+    background-color:black;
+}
+.qatar {
+    width: 350px;
+}
+.colum-medio{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    color:burlywood;
+    font-weight: bolder;
+    padding: 20px;
+}
+.colum_iz{
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    color: white;
+    align-items: center;
+    padding: 10px;
+    margin-top: 100px;
+}
+.caja_iz a{
+    color: white;
+    font-size: 50px;
+    margin: ;
+}
+/*REQUERIMIENTO 1*/
+#imagen1{
+    width: 300px;
+}
+.caja2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+}
+.enlace_boton{
+    display: flex;
+    justify-content: end;
+    font-size: 20px;
+    margin: 20px;
+}
+.enlace_boton a{
+    color: white;
+    width: 100px;
+    text-align: center;
+}
+.enlace_boton a:hover, .caja_iz a:hover{
+    color: rgba(225, 141, 23, 0.823);
+}
+/*REQUERIEMIENTO 2*/
+.mostrar{
+    color: white;
+}
+.centro {
+    text-align: center;
+    font-size: 30px;
+}
+.caja3{
+    display: flex;
+}
+.cajastickers{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px;
+}
+.img2 {
+    width: 300px;
+    height: 400px;
+}
+/*REQUERIMIENTO 3*/
+.caja4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+.cajas-digito{
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    padding: 30px;
+}
+/*ANIMACIONES*/
+.rotate-center{animation:rotate-center 1s} @keyframes rotate-center{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+.cajastickers{animation:shake-horizontal 0.8s linear both} @keyframes shake-horizontal{0%,100%{transform:translateX(0)}10%,30%,50%,70%{transform:translateX(-10px)}20%,40%,60%{transform:translateX(10px)}80%{transform:translateX(8px)}90%{transform:translateX(-8px)}}
+.shake-vertical{
+    font-size: 100px;
+    margin: 30px;
+    animation:shake-vertical 0.8s linear both} @keyframes shake-vertical{0%,100%{transform:translateY(0)}10%,30%,50%,70%{transform:translateY(-8px)}20%,40%,60%{transform:translateY(8px)}80%{transform:translateY(6.4px)}90%{transform:translateY(-6.4px)}}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>requerimiento 2</title>
+
+    <link rel="stylesheet" href="./assest/css/style.css">
+
+</head>
+<body>
+    <div class="caja2"> <!--REQUERIMIENTO 2: SUMATORIA DE TRES CANTIDADES-->
+        <div class="caja3">
+            <div class="cajastickers">
+                <img src="./assest/img/img2a.jpg" class="img2">
+                <input id="cant1" value="" type="number" min="0" max="10" class="centro" placeholder="Ingrese cantidad"> </input>
+            </div>
+            <div class="cajastickers">
+                <img src="./assest/img/img2b.jpg" class="img2">
+                <input id="cant2" value="" type="number" min="0" max="10" class="centro" placeholder="Ingrese cantidad"> </input>
+            </div>
+            <div class="cajastickers">
+                <img src="./assest/img/img2c.jpg" class="img2">
+                <input id="cant3" value="" type="number" min="0" max="10" class="centro" placeholder="Ingrese cantidad"> </input>
+            </div>
+        </div>
+        <div class="caja2">
+            <h3 id="total" class="mostrar"></h3>
+            <button onclick="
+                let cant1 = Number(document.getElementById('cant1').value);
+                let cant2 = Number(document.getElementById('cant2').value);
+                let cant3 = Number(document.getElementById('cant3').value);
+                let totalStickers = cant1 + cant2 + cant3;
+                let resultado = document.getElementById('total');
+        
+                if (totalStickers <= 10) {
+                    resultado.innerHTML = 'Llevas ' + totalStickers + ' stickers';
+                } else {
+                    resultado.innerHTML = 'Llevas demasiados stickers';
+                }
+            ">Verificar</button>
+        </div>
+        <div class="enlace_boton">
+            <a href="index.html" target="_blank"> Inicio </a>
+            <a href="index1.html" target="_blank"> Atras </a>
+            <a href="index3.html" target="_blank"> Siguiente </a>
+        </div>
+
+    </div>
+    
+
+<script src="./assest/js/javascript.js"></script>
+</body>
+</html>

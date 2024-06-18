@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>requerimiento 3</title>
+
+    <link rel="stylesheet" href="./assest/css/style.css">
+
+</head>
+<body>
+    <div class="caja4"> <!--REQUERIMIENTO 3: CONTRASEÑA-->
+        <h1 class="mostrar"> INGRESE SU CONTRASEÑA </h1>
+        <div class="cajas-digito">
+            <input id="digit1" type="number" min="1" max="9" value="" class="centro shake-vertical">
+            <input id="digit2" type="number" min="1" max="9" value="" class="centro shake-vertical">
+            <input id="digit3" type="number" min="1" max="9" value="" class="centro shake-vertical">
+        </div>
+        <button onclick="
+                let digit1 = document.getElementById('digit1').value;
+                let digit2 = document.getElementById('digit2').value;
+                let digit3 = document.getElementById('digit3').value;
+                let contraseña = digit1 + digit2 + digit3;
+    
+                let resultado = document.getElementById('resultado');
+    
+                if (contraseña === '911') {
+                    resultado.innerHTML = 'contraseña 1 correcta';
+                } else if (contraseña === '714') {
+                    resultado.innerHTML = 'contraseña 2 es correcta';
+                } else {
+                    resultado.innerHTML = 'contraseña incorrecta';
+                }
+            ">Ingresar
+        </button>
+        <h3 id="resultado" class="mostrar"></h3>
+
+        <div class="enlace_boton">
+            <a href="index.html" target="_blank"> Inicio </a>
+            <a href="index2.html" target="_blank"> Atras </a>
+        </div>
+
+    </div>
+    
+
+<script src="./assest/js/javascript.js"></script>
+</body>
+</html>
